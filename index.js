@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
-router.get("/", (req, res, next) => {
+app.get("/", (req, res, next) => {
   res.status(200).send("Welcome to the Axie API!");
 });
 
